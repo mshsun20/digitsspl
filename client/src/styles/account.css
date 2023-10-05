@@ -1,0 +1,111 @@
+
+.accnt {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    min-height: 90%;
+}
+.acchdr {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--bg-light);
+    width: 100%;
+    padding: 1% 5%;
+    font-size: 1.5rem;
+}
+.acchdr span {
+    font-size: 0.9rem;
+}
+.accbdy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--bg-light);
+    width: 100%;
+    padding: 1%;
+}
+.accicn {
+    /* position: relative; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    /* width: 75%; */
+    height: auto;
+    padding: 1.5%;
+}
+.accicn span {
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #088177;
+    min-width: 6rem;
+    height: auto;
+    padding: 0.8rem;
+    margin: 0.3rem;
+    aspect-ratio: 1/1;
+    text-wrap: nowrap;
+    border-radius: 50%;
+}
+.accdta {
+    background-color: #c9d9e2;
+    padding: 2%;
+    margin: 0.5rem;
+    border-radius: 0.2rem;
+}
+.accnm {
+    padding: 0.2rem;
+    font-size: 1.4rem;
+}
+.accindstry {
+    padding: 0.2rem;
+    font-size: 0.8rem;
+    overflow-x: auto;
+}
+.accempcd {
+    padding: 0.2rem;
+    font-size: 1rem;
+}
+.accinf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    padding: 2%;
+}
+.infhd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ab97c0;
+    width: 100%;
+    padding: 0.5%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+.accdtl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c6dfdf;
+    width: 100%;
+    padding: 1%;
+    border-radius: 0 0 0.2rem;
+}
+.accfrm {}
+.accfrm .frmgrp {}
+.accfrm label {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.accfrm input[type=text], .accfrm input[type=password] {}
+.accfrm input[type=submit] {}

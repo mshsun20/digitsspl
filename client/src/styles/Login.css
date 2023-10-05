@@ -1,0 +1,223 @@
+
+.logpg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #284546; */
+    width: 100%;
+    min-height: 95vh;
+}
+.logpg img {
+    position: absolute;
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    filter: blur(0.15rem);
+    z-index: 1;
+}
+.lgoverlay {
+    position: absolute;
+    background-color: #311b64;
+    background-size: cover;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    /* filter: blur(20rem); */
+    z-index: 2;
+}
+.logcontainer {
+    position: relative;
+    top: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+    /* opacity: 0.6; */
+    width: 35rem;
+    height: 80%;
+    margin: 2rem;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    z-index: 4;
+}
+.logcontainer .contlayr {
+    position: absolute;
+    top: 0;
+    background-color: #2d2242;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    filter: blur(0.02rem);
+    z-index: 1;
+}
+.lgsec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.loghd {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    color: var(--white);
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    z-index: 2;
+}
+.logfrm {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0.2rem;
+    z-index: 2;
+}
+.logfrm .lgfrm {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.lgfrm .frmgrp {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 65%;
+    height: 4rem;
+    margin: 0.5rem;
+}
+.lgfrm .frmgrp label {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    padding: 0.2rem;
+    color: #e2d3ff;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+.lgfrm .frmgrp input {
+    position: absolute;
+    bottom: 0;
+    background-color: transparent;
+    width: 100%;
+    /* height: 100%; */
+    padding: 0.2rem;
+    color: #d3fff0;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 0.135rem solid #8774ad;
+    outline: none;
+}
+.lgfrm .frmgrp input[type="submit"] {
+    position: relative;
+    background-color: #8400ff;
+    height: 3rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    color: #dfbdff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border: 0.2rem solid #8400ff;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.lgfrm .frmgrp input[type="submit"]:hover {
+    background-color: transparent;
+    color: #e4aaff;
+    border: 0.2rem solid #e4aaff;
+}
+.reglnk {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 2rem;
+    color: #e4ffe9;
+    font-size: 1rem;
+    z-index: 2;
+}
+.reglnk .lnk {
+    position: relative;
+    color: #00ffff;
+    transition: all 0.1s ease-in-out;
+}
+.reglnk .lnk:hover {
+    color: #7fffd4;
+}
+
+
+
+
+@media (min-width: 1440px) {
+    .logcontainer {
+        width: 50rem;
+    }
+}
+@media (max-width: 1024px) {
+    .logcontainer {
+        width: 70%;
+    }
+    .frmgrp {
+        width: 75%;
+    }
+}
+@media (max-width: 768px) {
+    .logcontainer {
+        width: 80%;
+    }
+    .frmgrp {
+        width: 80%;
+    }
+}
+@media (max-width: 600px) {
+    .logcontainer {
+        width: 95%;
+    }
+    .loghd {
+        font-size: 2rem;
+    }
+    .frmgrp {
+        width: 90%;
+    }
+}
+@media (max-width: 425px) {
+    .logcontainer {
+        width: 95%;
+    }
+    .loghd {
+        font-size: 1.6rem;
+    }
+    .frmgrp {
+        width: 98%;
+    }
+}
+@media (max-width: 375px) {
+    .logcontainer {
+        width: 98%;
+    }
+    .loghd {
+        font-size: 1.4rem;
+    }
+    .frmgrp {
+        width: 99.5%;
+    }
+}

@@ -1,0 +1,234 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+}
+.navmenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 10vh;
+    padding: 0 2%;
+}
+.nav {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+.nav .lnk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    padding: 0.5rem;
+    color: var(--theme);
+    font-size: 1rem;
+    font-weight: bold;
+    text-wrap: nowrap;
+    transition: all 0.1s linear;
+}
+.nav .lnk:hover {
+    color: var(--theme-dark);
+}
+.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    padding: 0.5rem;
+    color: #5e00aa;
+    font-size: 1rem;
+    font-weight: bold;
+    text-wrap: nowrap;
+    transition: all 0.1s linear;
+}
+.nav .drp {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--theme);
+    color: var(--theme-dark);
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    z-index: 0;
+}
+.nav:hover > .drp {
+    opacity: 1;
+    z-index: 3;
+}
+.drp .nvlnk {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-image: radial-gradient(var(--light) 5%, var(--theme) 100%);
+    width: 100%;
+    padding: 0.8rem;
+    color: var(--theme);
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-wrap: wrap;
+    transition: all 0.1s linear;
+}
+.drp .nvlnk:hover {
+    color: var(--theme-dark);
+}
+.drp .active {
+    color: #5e00aa;
+}
+.navtxt {
+    display: inline-block;
+}
+.navicn {
+    display: none;
+}
+.hmbmenu {
+    display: none;
+}
+.navacc {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 10vh;
+    /* padding: 1%; */
+}
+.accinf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.acclnk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7d7ff;
+    width: auto;
+    height: auto;
+    padding: 0.5rem;
+    color: #d017ff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: 0.2rem outset #d017ff;
+    border-right: 0.5rem outset #d017ff;
+    border-left: 0.5rem outset #d017ff;
+    border-radius: 50%;
+    transition: all 0.2s linear;
+}
+.acclnk:hover {
+    background-color: #d017ff;
+    color: #f7d7ff;
+}
+.profl {
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--theme);
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.2s;
+    z-index: 3;
+}
+.visbl {
+    height: 10rem;
+}
+.cnfmsg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1rem;
+}
+.cnfrmbtn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.cnfrmbtn .nav {
+    width: 100%;
+}
+.cnfrmbtn .nav .lnk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-image: radial-gradient(var(--light) 5%, var(--theme) 100%);
+    width: 100%;
+    color: var(--theme-dark);
+    border: none;
+}
+.cnfrmbtn .nav .lnk:hover {
+    color: var(--theme);
+}
+.cnfrmbtn .nav .navtxt {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+.cnfrmbtn .nav .navicn {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+
+
+
+
+@media (min-width: 1280px) {
+    .navtxt {
+        display: inline-block;
+    }
+    .navicn {
+        display: inline-block;
+    }
+}
+@media (max-width: 1024px) {
+    .navtxt {
+        display: none;
+    }
+    .navicn {
+        display: inline-block;
+    }
+    .cnfrmbtn .nav .navtxt {
+        display: inline-block;
+    }
+}
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: row-reverse;
+        width: 40%;
+    }
+    .navmenu {
+        display: none;
+    }
+    .hmbmenu {
+        display: inline-block;
+    }
+}

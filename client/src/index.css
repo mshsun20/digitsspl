@@ -1,0 +1,35 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Varela+Round&display=swap');
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --light: #eaf0f1;
+  --dark: #02090c;
+  --theme: #436a75;
+  --theme-dark: #001d27;
+  --theme-light: #a4bec5;
+  --bg-dark: #002a38;
+  --bg-light: #b6cacf;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  font-family: 'Varela Round', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
